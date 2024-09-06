@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid black;
+            display: none;
+        }
+        #mainMenu {
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="gameContainer">
+      <div id="mainMenu">
+          <h1>Snake Game</h1>
+          <button id="startButton">Start Game</button>
+          <div id="speedOptions" style="display: none;">
+              <button id="normalSpeed">Normal Speed</button>
+              <button id="slowSpeed">Slow Speed</button>
+          </div>
+      </div>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+    <script src="snake.js"></script>
+  </body>
+</html>
